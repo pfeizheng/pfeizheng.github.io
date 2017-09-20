@@ -37,7 +37,8 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: #05232D; }
+  background: #05232D;
+  overflow: hidden; }
 
 * {
   margin: 0;
