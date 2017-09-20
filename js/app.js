@@ -204,17 +204,19 @@ function animateCometsMotion(comet1, speed, pauseSec, delaySec) {
 
 // UFO animation
 function animateUFO() {
-  startUFO();
+  var spaceshipMotionTl = startUFO();
   $(window).on('resize load', _.debounce(function () {
-    startUFO();
+    TweenMax.set('.ufo', { clearProps: 'all' });
+    spaceshipMotionTl.kill();
+    spaceshipMotionTl = startUFO();
   }, 500));
 }
 
 function startUFO() {
   if ($(window).width() > 720) {
-    createUFOPath(['15', '50', '0']);
+    return createUFOPath(['15', '50', '0']);
   } else {
-    createUFOPath(['5', '50', '0']);
+    return createUFOPath(['5', '50', '0']);
   }
 }
 
