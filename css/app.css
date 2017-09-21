@@ -38,7 +38,8 @@ html, body {
   margin: 0;
   padding: 0;
   background: #05232D;
-  overflow: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 * {
   margin: 0;
