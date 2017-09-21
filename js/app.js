@@ -1,6 +1,9 @@
 'use strict';
 
 $(document).ready(function () {
+  document.body.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+  });
   animateStars();
   animateSpaceshipPath();
   animateSpaceshipFlame();
