@@ -33,10 +33,7 @@
 /*===================================
 =            Base Styles            =
 ===================================*/
-html {
-  overflow-x: hidden; }
-
-body {
+html, body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -202,6 +199,9 @@ body {
   transform: translate(-50%, -50%); }
   .main-text .title {
     opacity: 0; }
+  @media screen and (max-width: 480px) {
+    .main-text {
+      top: calc(68px + 20vh + 2vw); } }
 
 .comet-bl {
   position: absolute;
