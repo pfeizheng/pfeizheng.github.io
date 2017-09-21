@@ -54,7 +54,7 @@ body {
   width: 100vw; }
 
 .bg-container {
-  top: calc(40vh + 4vw);
+  top: calc(38vh + 4vw);
   left: 50vw;
   position: absolute;
   transform: translate(-50%, -50%); }
@@ -67,32 +67,26 @@ body {
 
 @media screen and (min-width: 720px) {
   .bg-circle-sm {
-    height: calc( 288px + 30vh);
-    width: calc( 288px +  17vw); } }
+    width: calc( 280px +  17vw); } }
 
 @media screen and (max-width: 719px) {
   .bg-circle-sm {
-    height: calc( 308px + 30vh);
-    width: calc( 308px +  17vw); } }
+    width: calc( 200px +  22vw); } }
 
 @media screen and (min-width: 720px) {
   .bg-circle-md {
-    height: calc( 432px + 80vh);
-    width: calc( 432px +  44.5vw); } }
+    width: calc( 410px +  44.5vw); } }
 
 @media screen and (max-width: 719px) {
   .bg-circle-md {
-    height: calc( 502px + 80vh);
-    width: calc( 502px +  44.5vw); } }
+    width: calc( 360px +  44vw); } }
 
 @media screen and (min-width: 720px) {
   .bg-circle-lg {
-    height: calc( 480px + 130vh);
-    width: calc( 480px +  72.2vw); } }
+    width: calc( 460px +  72.2vw); } }
 
 @media screen and (max-width: 719px) {
   .bg-circle-lg {
-    height: calc( 80px + 130vh);
     width: calc( 60px + 72.2vw); } }
 
 .p-yellow {
@@ -110,17 +104,15 @@ body {
       left: 50vw;
       transform: translate(-50%, 50%); } }
 
-@media screen and (min-width: 720px) {
-  .p-blue {
-    position: absolute;
-    height: 53vh;
-    width: calc(20vw + 106px);
-    right: -2vw;
-    bottom: -16vh; } }
-
-@media screen and (max-width: 719px) {
-  .p-blue {
-    display: none; } }
+.p-blue {
+  position: absolute;
+  height: 53vh;
+  width: calc(20vw + 106px);
+  right: -2vw;
+  bottom: -16vh; }
+  @media screen and (max-width: 719px) {
+    .p-blue {
+      display: none; } }
 
 .p-purple {
   position: absolute;
@@ -128,7 +120,7 @@ body {
   width: calc(15vw + 30px);
   right: -1vw;
   bottom: 12vw; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 720px) {
     .p-purple {
       display: none; } }
 
@@ -137,8 +129,12 @@ body {
   height: 34vh;
   width: 25.5vw;
   width: calc(16vw + 100px);
-  left: calc(-3vw - 40px);
-  top: -12vh; }
+  left: calc(-4vw - 20px);
+  top: calc(-160px + 3.5vw); }
+  @media screen and (max-width: 720px) {
+    .p-moon {
+      left: calc(3pw);
+      top: calc(-140px + 3.5vw); } }
 
 .pulse {
   position: absolute;
@@ -181,7 +177,7 @@ body {
 .ufo {
   position: absolute;
   height: calc(3vw + 2vh + 40px);
-  left: calc(34vw - 100px);
+  left: calc(34vw - 90px);
   top: calc(16vh); }
   .ufo .light {
     opacity: 0.4; }
@@ -197,8 +193,8 @@ body {
 
 .main-text {
   position: absolute;
-  width: calc(300px + 23vw);
-  top: calc(31vh + 3vw);
+  width: calc(150px + 32vw);
+  top: calc(92px + 20vh + 2vw);
   left: 50vw;
   transform: translate(-50%, -50%); }
   .main-text .title {
@@ -220,12 +216,12 @@ body {
   display: none; }
 
 .bttn-contact {
-  width: 140px;
+  width: calc(62px + 4.5vw);
   color: white;
   position: absolute;
   cursor: pointer;
-  top: calc(46vh + 4vw);
-  left: 50%;
+  top: calc(104px + 26vh + 8vw);
+  left: 50vw;
   transform: translate(-50%, -50%); }
   .bttn-contact span {
     position: absolute;
@@ -233,7 +229,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
-    font-size: 0.9rem;
+    font-size: calc(0.4vw + 0.4rem);
     transition: all 0.4s ease-in-out; }
   .bttn-contact rect {
     stroke-width: 6px;
@@ -245,8 +241,8 @@ body {
   stroke-dashoffset: 1180; }
 
 .bttn-contact:hover span {
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: calc(0.46vw + 0.46rem);
+  font-weight: 500;
   letter-spacing: 0.3px; }
 
 .bttn-round {
