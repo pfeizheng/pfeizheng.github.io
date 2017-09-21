@@ -4,6 +4,9 @@ $(document).ready(function () {
   document.body.addEventListener('touchstart', function (e) {
     e.preventDefault();
   });
+  document.body.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+  });
   animateStars();
   animateSpaceshipPath();
   animateSpaceshipFlame();
